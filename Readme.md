@@ -1,7 +1,11 @@
 # Projeto PIXMS - Microserviços com Java e RabbitMQ
 
 ## Descrição
-Este projeto é uma aplicação desenvolvida em **Java** utilizando o framework **Spring Boot** para implementar uma arquitetura de microserviços integrada com **RabbitMQ**. O projeto tem como objetivo oferecer uma solução escalável e eficiente para comunicação assíncrona entre serviços.
+ Este projeto é uma aplicação desenvolvida em **Java** utilizando o framework **Spring Boot** para implementar uma arquitetura de microserviços integrada com **RabbitMQ**. O projeto tem como objetivo oferecer uma solução escalável e eficiente para comunicação assíncrona entre serviços.
+
+## Modelo de arquitetura do projeto
+
+![screenshot](\images\filas.png)
 
 ## Tecnologias Utilizadas
 - **Java 21**
@@ -29,7 +33,7 @@ Este projeto é uma aplicação desenvolvida em **Java** utilizando o framework 
 
 
 ## Configuração do RabbitMQ
-No arquivo **docker-compose.yml**, configure os seguintes parâmetros:
+ No arquivo **docker-compose.yml**, configure os seguintes parâmetros:
 
 ```docker
 services:
@@ -54,4 +58,4 @@ services:
 - Abra um Pull Request
 
 ## Licença
-Este projeto está licenciado sob a [MIT License](LICENSE).
+ Este projeto está licenciado sob a [MIT License](LICENSE).
