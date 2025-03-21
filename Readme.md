@@ -5,7 +5,7 @@
 
 ## Modelo de arquitetura do projeto
 
-![screenshot](\images\filas.png)
+![screenshot](images/filas.png)
 
 ## Tecnologias Utilizadas
 - **Java 21**
