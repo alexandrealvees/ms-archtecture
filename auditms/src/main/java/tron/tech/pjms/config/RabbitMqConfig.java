@@ -1,4 +1,4 @@
-package tron.tech.auditms.config;
+package tron.tech.pjms.config;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
@@ -11,8 +11,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class    RabbitMqConfig {
 
-    public static final String PF_QUEUE = "pf-queue";
-    public static final String PF_ROUTING_QUEUE = "pf";
+    public static final String AUDIT_QUEUE = "audit-queue";
     public static final String PIX_EFETUADO_EXCHANGE = "pix-efetuado";
 
     @Bean
@@ -22,8 +21,8 @@ public class    RabbitMqConfig {
     }
 
     @Bean
-    public Queue pfQeue(){
-        return new Queue(PF_QUEUE);
+    public Queue auditQeue(){
+        return new Queue(AUDIT_QUEUE);
     }
 
     @Bean
@@ -32,8 +31,8 @@ public class    RabbitMqConfig {
     }
 
     @Bean
-    public Binding bindingQueueExchange(Queue pfQueue, TopicExchange pixEfetuadoExchange) {
-        return BindingBuilder.bind(pfQueue).to(pixEfetuadoExchange).with(PF_ROUTING_QUEUE);
+    public Binding bindingQueueExchange(Queue auditQueue, TopicExchange pixEfetuadoExchange) {
+        return BindingBuilder.bind(auditQueue).to(pixEfetuadoExchange).with("*");
     }
 
 }

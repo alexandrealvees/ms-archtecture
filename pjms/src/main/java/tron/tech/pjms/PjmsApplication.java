@@ -1,13 +1,13 @@
-package tron.tech.auditms;
+package tron.tech.pjms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AuditmsApplication {
+public class PjmsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AuditmsApplication.class, args);
+		SpringApplication.run(PjmsApplication.class, args);
 	}
 
 }

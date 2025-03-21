@@ -1,10 +1,10 @@
-package tron.tech.auditms;
+package tron.tech.pjms;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PjmsApplicationTests {
+class PixmsApplicationTests {
 
 	@Test
 	void contextLoads() {

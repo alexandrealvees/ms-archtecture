@@ -1,4 +1,4 @@
-package tron.tech.auditms;
+package tron.tech.pjms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
